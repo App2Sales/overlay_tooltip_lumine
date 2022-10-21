@@ -149,7 +149,7 @@ class _TooltipLayout extends StatelessWidget {
     final calculatedBottom = isTop ? (size.maxHeight - topLeft.dy) : null;
     return (model.horPosition == TooltipHorizontalPosition.WITH_WIDGET)
         ? Positioned(
-            top: calculatedTop,
+            top: calculatedTop - 30,
             left: calculatedLeft,
             right: calculatedRight,
             bottom: calculatedBottom,
